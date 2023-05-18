@@ -19,7 +19,6 @@ const Navigationbar = () => {
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
                     <img className="w-16 rounded-full" src={logo} alt="" />
-                    <span className="">Toy Planet</span>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
