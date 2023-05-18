@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { AuthContext } from "../Provider/AuthProvider";
+import { FcGoogle } from 'react-icons/fc'
 
 
 const Login = () => {
@@ -61,6 +62,9 @@ const Login = () => {
                     Don't have an account? <Link to="/register" className="text-primary">Register</Link>
                 </div>
             </form>
+            <button className="btn btn-outline btn-info gap-2 mt-2 md:mx-28 md:w-1/2">
+                <FcGoogle></FcGoogle> Google
+            </button>
         </div>
     );
 };
