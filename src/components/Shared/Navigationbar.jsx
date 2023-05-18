@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom"
+import logo from "../../assets/images.png"
 
-const NavBar = () => {
+const Navigationbar = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -23,7 +25,10 @@ const NavBar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link to="/" className="btn btn-ghost normal-case text-xl">
+                    <img className="w-16 rounded-full" src={logo} alt="" />
+                    Toy Planet
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -48,4 +53,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Navigationbar;
