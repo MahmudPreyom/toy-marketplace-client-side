@@ -14,7 +14,7 @@ const Navigationbar = () => {
                         <li><Link>All Toys</Link></li>
                         <li><Link>My Toys</Link></li>
                         <li><Link>Add A Toy</Link></li>
-                        <li><Link>Blogs</Link></li>
+                        <li><Link to="/blog">Blogs</Link></li>
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
@@ -27,7 +27,7 @@ const Navigationbar = () => {
                     <li><Link>All Toys</Link></li>
                     <li><Link>My Toys</Link></li>
                     <li><Link>Add A Toy</Link></li>
-                    <li><Link>Blogs</Link></li>
+                    <li><Link to="/blog">Blogs</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
