@@ -1,10 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React, { useContext } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom"
+import { AuthContext } from "../Provider/AuthProvider";
+
 
 const Login = () => {
+    const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+
+
+        signIn(email, password)
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser);
+                navigate(from, { replace: true })
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
+    }
     return (
         <div className="w-full max-w-md mx-auto mt-8 mb-8">
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8">
+            <form onSubmit={handleLogin} className="bg-white shadow-md rounded px-8 pt-6 pb-8">
                 <h2 className="text-center text-lg font-semibold mb-4">Login</h2>
 
                 <div className="mb-4">
@@ -13,7 +38,7 @@ const Login = () => {
                         className="form-control w-full"
                         type="email"
                         name="email"
-                        placeholder="Enter your email address" />
+                        placeholder="Enter your email address" required />
                 </div>
 
                 <div className="mb-4">
@@ -22,7 +47,7 @@ const Login = () => {
                         className="form-control w-full"
                         type="password"
                         name="password"
-                        placeholder="Enter your password" />
+                        placeholder="Enter your password" required />
                 </div>
 
                 <div className="mb-4">
