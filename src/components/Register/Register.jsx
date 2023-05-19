@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom"
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from 'react-icons/fc'
+import GoogleLogin from "../googleLogin/GoogleLogin";
 
 const Register = () => {
     const { createUser } = useContext(AuthContext);
@@ -75,10 +76,7 @@ const Register = () => {
                     </div>
 
                 </form>
-
-                <button className="btn btn-outline btn-info gap-2 mt-2 md:mx-28 md:w-1/2">
-                    <FcGoogle></FcGoogle> Google
-                </button>
+                <GoogleLogin></GoogleLogin>
         </div>
     );
 };
