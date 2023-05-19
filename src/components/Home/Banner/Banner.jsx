@@ -6,7 +6,7 @@ const Banner = () => {
         <div className="mb-5">
             <div className="relative">
                 <img
-                    className="mx-auto w-full"
+                    className="mx-auto w-full md:h-[650px]"
                     src={img}
                     alt="Banner Image"
                 />

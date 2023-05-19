@@ -1,12 +1,13 @@
 import React from "react";
-import ReactTab from "../ReactTab/ReactTab";
 import Banner from "./Banner/Banner";
+import ReactTab from "../Home/ReactTab/ReactTab"
+import Gallery from "./Gallery/Gallery";
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
             <Banner></Banner>
+            <Gallery></Gallery>
             <ReactTab></ReactTab>
         </div>
     );

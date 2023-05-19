@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../../components/ReactTab/ReactTab.css"
+import "./ReactTab.css"
 
 export default function ReactTab(){
     const [currentTab, setCurrentTab] = useState('1');
