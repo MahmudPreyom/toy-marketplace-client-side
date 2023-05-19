@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTab from "../ReactTab/ReactTab";
 import Banner from "./Banner/Banner";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <h2>This is Home</h2>
             <Banner></Banner>
+            <ReactTab></ReactTab>
         </div>
     );
 };

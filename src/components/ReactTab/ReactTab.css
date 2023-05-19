@@ -1,0 +1,24 @@
+.container{
+    margin: 0 auto;
+    width: 600px;
+    background-color: beige;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.tabs.button{
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.tabs button:disabled{
+    background-color: aqua;
+    color: white;
+}

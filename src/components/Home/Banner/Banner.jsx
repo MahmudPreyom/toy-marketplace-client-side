@@ -3,7 +3,7 @@ import img from "../../../assets/img.webp"
 
 const Banner = () => {
     return (
-        <div>
+        <div className="mb-5">
             <div className="relative">
                 <img
                     className="mx-auto w-full"
