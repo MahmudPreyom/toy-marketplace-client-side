@@ -14,6 +14,8 @@ const AddToysForm = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const quantity = form.quantity.value;
+        // const result = [photo, name, sellerName, sellerEmail, subCategory, price, rating,quantity];
+        console.log(photo, name, sellerName, sellerEmail, subCategory, price, rating,quantity);
         // Perform form submission or data handling here
         // You can access the form values from the state variables
     };
