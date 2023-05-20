@@ -15,6 +15,7 @@ import AuthProvider from './components/Provider/AuthProvider.jsx';
 import AddToysForm from './components/AddToysForm/AddToysForm.jsx';
 import AllToys from './components/AllToys/AllToys.jsx';
 import MyToys from './components/MyToys/MyToys.jsx';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 
 
 const router = createBrowserRouter([
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: "mytoys",
-        element: <MyToys></MyToys>
+        element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
       }
     ]
   },
