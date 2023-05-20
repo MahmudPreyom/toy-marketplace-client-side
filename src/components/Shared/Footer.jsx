@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import img from "../../assets/imagel.png"
+import { Link } from "react-router-dom"
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Footer = () => {
+    const { user, logOut } = useContext(AuthContext);
+
     return (
         <div>
-            <footer className="footer p-10 bg-base-300 text-base-content">
+            <footer className="footer text-white p-10 bg-sky-800 text-base-content">
                 <div>
                     <img className="w-24" src={img} alt="" />
                     <p>Toys Planet<br />Providing reliable toys since 1992</p>
                 </div>
-                <div>
+                <div >
                     <span className="footer-title">Services</span>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>
@@ -17,11 +21,12 @@ const Footer = () => {
                     <a className="link link-hover">Advertisement</a>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <span className="footer-title">Menu</span>
+                    <Link to="/">Home</Link>
+                    <Link to="alltoys">All Toys</Link>
+                    <Link to="/blog">Blogs</Link>
+                    {user && <><Link to="mytoys">My Toys</Link>
+                        <Link to="/addtoysform">Add A Toy</Link></>}
                 </div>
                 <div>
                     <span className="footer-title">Social</span>
@@ -32,9 +37,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div className="footer footer-center p-4 bg-base-300 text-base-content">
-                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
-            </div>
+            {/* <div className="footer footer-center p-4 bg-base-300 text-base-content">
+                <p>Copyright © 2023 - All right reserved by TPC Industries Ltd</p>
+            </div> */}
         </div>
     );
 };

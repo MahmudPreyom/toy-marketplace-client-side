@@ -43,7 +43,7 @@ const Gallery = () => {
 
     return (
         <div>
-            <h3 className="text-center font-bold text-4xl mb-10 mt-10 text-red-950">Toys Planet</h3>
+            <h3 className="text-center font-bold text-4xl mb-10 mt-10 text-red-950">Toys Planet Car</h3>
             <div className="gallery">
                 {
                     data.map((item, index) => {

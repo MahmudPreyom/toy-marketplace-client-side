@@ -14,10 +14,26 @@ const AddToysForm = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const quantity = form.quantity.value;
-        // const result = [photo, name, sellerName, sellerEmail, subCategory, price, rating,quantity];
-        console.log(photo, name, sellerName, sellerEmail, subCategory, price, rating,quantity);
-        // Perform form submission or data handling here
-        // You can access the form values from the state variables
+        const detailDescription =form.detailDescription.value;
+        const addCars = {photo, toyName: name, sellerName, sellerEmail, subCategory, price, rating,quantity,detailDescription};
+        console.log(addCars);
+
+        fetch('http://localhost:5000/allCarToys',{
+            method: 'POST', 
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(addCars)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+
+
+
+
+
     };
 
     return (
@@ -36,7 +52,7 @@ const AddToysForm = () => {
                 </div>
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-gray-700 font-bold">
-                        Name
+                        Toy Name
                     </label>
                     <input
                         type="text"
@@ -83,7 +99,7 @@ const AddToysForm = () => {
                         Price
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         name="price"
                         className="border border-gray-300 rounded-md px-4 py-2 w-full"
                     />
@@ -93,7 +109,7 @@ const AddToysForm = () => {
                         Rating
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         name="rating"
                         className="border border-gray-300 rounded-md px-4 py-2 w-full"
                     />
@@ -103,8 +119,18 @@ const AddToysForm = () => {
                         Available Quantity
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         name="quantity"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="quantity" className="block text-gray-700 font-bold">
+                    Detail description
+                    </label>
+                    <input
+                        type="text"
+                        name="detailDescription"
                         className="border border-gray-300 rounded-md px-4 py-2 w-full"
                     />
                 </div>
