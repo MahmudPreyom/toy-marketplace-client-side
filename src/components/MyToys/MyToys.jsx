@@ -17,11 +17,25 @@ const MyToys = () => {
         })
     },[])
 
+    const handleDelete = id => {
+        const proceed = confirm ('Are you want to Delete');
+        if(proceed) {
+            fetch(`http://localhost:5000/allCarToys/${id}`, {
+                method: "DELETE"
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.deleteCount > 0) {
+                    alert ('Deleted item successfully')
+                }
+            })
+        }
+    }
 
-    
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto bg-sky-100">
             <table className="table table-compact  w-2/3 my-12 border mx-auto">
                 <thead>
                     <tr>
@@ -38,6 +52,7 @@ const MyToys = () => {
                         myToys.map((myToy, index) => <MyToy
                         key={index}
                         myToy={myToy}
+                        handleDelete={handleDelete}
                         ></MyToy>)
                     }
                 </tbody>

@@ -30,10 +30,6 @@ const AddToysForm = () => {
             console.log(data);
         })
 
-
-
-
-
     };
 
     return (
