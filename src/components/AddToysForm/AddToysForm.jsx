@@ -33,7 +33,7 @@ const AddToysForm = () => {
     };
 
     return (
-        <div className="container mx-auto py-8">
+        <div className="w-full max-w-md mx-auto mt-8 mb-8 rounded bg-sky-200 p-3">
             <h1 className="text-2xl font-bold mb-4">Add A Toy</h1>
             <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
                 <div className="mb-4">
