@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const AddToysForm = () => {
 
@@ -16,9 +16,9 @@ const AddToysForm = () => {
         const quantity = form.quantity.value;
         const detailDescription =form.detailDescription.value;
         const addCars = {photo, toyName: name, sellerName, sellerEmail, subCategory, price, rating,quantity,detailDescription};
-        console.log(addCars);
+        // console.log(addCars);
 
-        fetch('http://localhost:5000/allCarToys',{
+        fetch('https://toys-planet-server.vercel.app/allCarToys',{
             method: 'POST', 
             headers: {
                 'content-type' : 'application/json'

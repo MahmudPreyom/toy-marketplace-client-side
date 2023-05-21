@@ -1,7 +1,7 @@
 .container{
     margin: 0 auto;
     width: 600px;
-    background-color: beige;
+    background-color: rgb(218, 233, 243);
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 30px;
@@ -18,7 +18,19 @@
     margin-right: 5px;
 }
 
+
 .tabs button:disabled{
-    background-color: aqua;
+    background-color: rgb(24, 15, 124);
     color: white;
 }
+
+@media (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+    .tabs{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+

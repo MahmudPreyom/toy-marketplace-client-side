@@ -13,7 +13,7 @@ const Banner = () => {
             </div>
 
             <div className='absolute md:top-52 top-24 left-0'>
-                <p className="md:text-7xl font-bold text-2xl text-sky-800 italic px-4 py-2">
+                <p className="md:text-7xl font-bold text-sky-800 italic px-4 md:py-2">
                     BOGNOR MODEL <br /> CAR
                     <small className='md:text-5xl md:font-bold text-blue-500'> Planet</small>
                 </p>

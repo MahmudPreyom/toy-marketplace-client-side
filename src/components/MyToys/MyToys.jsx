@@ -7,7 +7,7 @@ const MyToys = () => {
     const { user } = useContext(AuthContext)
     const [myToys, setMyToys] = useState([])
 
-    const url = `http://localhost:5000/allCarToys?sellerEmail=${user?.email}`
+    const url = `https://toys-planet-server.vercel.app/allCarToys?sellerEmail=${user?.email}`
 
     useEffect(() => {
         fetch(url)
@@ -20,7 +20,7 @@ const MyToys = () => {
     const handleDelete = id => {
         const proceed = confirm ('Are you want to Delete');
         if(proceed) {
-            fetch(`http://localhost:5000/allCarToys/${id}`, {
+            fetch(`https://toys-planet-server.vercel.app/allCarToys/${id}`, {
                 method: "DELETE"
             })
             .then(res => res.json())

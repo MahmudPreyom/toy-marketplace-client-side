@@ -43,7 +43,8 @@ const Gallery = () => {
 
     return (
         <div>
-            <h3 className="text-center font-bold text-4xl mb-10 mt-10 text-red-950">Car Gallery</h3>
+            <h3 className="text-center font-bold text-4xl mb-2 mt-24 text-red-950">Car Gallery</h3>
+            <p className="text-center mb-10">Playing with small toy cars build a child's fine motor skills. They develop hand-eye coordination and dexterity in both their hands as kids pick up, carry, throw, push and pull small toy cars around.</p>
             <div className="gallery">
                 {
                     data.map((item, index) => {
