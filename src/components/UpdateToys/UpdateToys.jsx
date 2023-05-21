@@ -1,9 +1,11 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom"
+import useTitle from "../../hooks/useTitle";
 
 const UpdateToys = () => {
     const myToys = useLoaderData();
     const { _id, price, quantity, detailDescription } = myToys;
+    useTitle('Update')
     const handleUpdateCar = event => {
         event.preventDefault();
 

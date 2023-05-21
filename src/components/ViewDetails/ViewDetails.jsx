@@ -1,9 +1,11 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom"
+import useTitle from "../../hooks/useTitle";
 
 const ViewDetails = () => {
     const view = useLoaderData();
     const { _id, sellerName, toyName, subCategory, price, rating, quantity, detailDescription, photo, sellerEmail } = view;
+    useTitle('View Details')
     return (
         <div className="mx-auto card w-96 bg-sky-100 mt-4 mb-4 shadow-xl">
             <figure className="px-10 pt-10">
