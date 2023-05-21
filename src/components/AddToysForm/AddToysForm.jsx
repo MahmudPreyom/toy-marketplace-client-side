@@ -1,7 +1,9 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 
 const AddToysForm = () => {
 
+    useTitle('Add Form')
 
     const handleSubmit = event => {
         event.preventDefault();

@@ -4,8 +4,10 @@ import ReactTab from "../Home/ReactTab/ReactTab"
 import Gallery from "./Gallery/Gallery";
 import Carousel from "./Carousel/Carousel";
 import SecondSection from "./Secondsection/SecondSection";
+import useTitle from "../../hooks/useTitle";
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <Banner></Banner>

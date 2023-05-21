@@ -1,9 +1,11 @@
 import React from "react";
 import {useLoaderData} from 'react-router-dom'
+import useTitle from "../../hooks/useTitle";
 import AllCarToy from "./AllCarToy";
 
 const AllToys = () => {
     const allCarToys = useLoaderData();
+    useTitle('All Toys')
     console.log(allCarToys);
     return (
         <div className="overflow-x-auto bg-sky-100">
