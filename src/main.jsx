@@ -18,6 +18,7 @@ import MyToys from './components/MyToys/MyToys.jsx';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 import UpdateToys from './components/UpdateToys/UpdateToys.jsx';
 import ViewDetails from './components/ViewDetails/ViewDetails.jsx';
+import Error from './components/Error/Error.jsx';
 
 
 const router = createBrowserRouter([
@@ -63,9 +64,14 @@ const router = createBrowserRouter([
         path: "viewdetails/:id",
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
         loader: ({params}) => fetch(`https://toys-planet-server.vercel.app/allCarToys/${params.id}`)
-       }
+       },
+       
     ]
   },
+  {
+    path: "*",
+    element: <Error></Error>
+   }
 ]);
 
 
