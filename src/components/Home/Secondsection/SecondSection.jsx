@@ -4,7 +4,7 @@ import cardCar2 from "../../../assets/cardCar2.jpg"
 const SecondSection = () => {
     return (
         <div className="mb-24">
-            <h2 className="text-center font-bold text-4xl mb-2 mt-24 text-red-950">Our Market Place</h2>
+            <h2 className="text-center font-bold text-4xl mb-2 mt-24 text-blue-900">Our Market Place</h2>
             <p className="text-center mb-8">Toy Cars Industry Latest Research Report. Complete Market Research, Market Analysis, CAGR, Trends, Major Players, Market Share, Market Size, Forecast.</p>
             <div className="card lg:card-side bg-base-100 shadow-xl mb-10 mt-5 bg-sky-100">
                 <figure><img src={cardCar2} alt="Album" /></figure>

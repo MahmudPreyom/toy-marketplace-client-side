@@ -9,7 +9,7 @@ import carPic6 from "../../../assets/carPic6.webp"
 const Carousel = () => {
     return (
         <div>
-            <h2 className="text-4xl font-bold text-center text-red-950 mb-2 mt-24">Types Of Cars Picture</h2>
+            <h2 className="text-4xl font-bold text-center text-blue-900 mb-2 mt-24">Collection Toy Car</h2>
             <p className="text-center mb-10">Find the perfect look like toy car models or miniatures stock photo, image, vector, illustration or 360 image. Available for both RF and RM licensing.</p>
             <div className="carousel w-1/2 mx-auto">
                 <div id="item1" className="carousel-item w-full">

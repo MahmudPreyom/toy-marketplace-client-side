@@ -85,9 +85,9 @@ const AddToysForm = () => {
                         className="border border-gray-300 rounded-md px-4 py-2 w-full"
                     >
                         <option value="">Select a sub-category</option>
-                        <option value="Math Toys">Math Toys</option>
-                        <option value="Language Toys">Language Toys</option>
-                        <option value="Science Toys">Science Toys</option>
+                        <option value="Math Toys">Jeep Car Toys</option>
+                        <option value="Language Toys">Motorcycle Car Toys</option>
+                        <option value="Science Toys">Racing Car Toys</option>
                     </select>
                 </div>
                 <div className="mb-4">
