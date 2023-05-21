@@ -27,7 +27,7 @@ const MyToys = () => {
             .then(data => {
                 console.log(data);
                 if(data.deleteCount > 0) {
-                    alert ('Deleted item successfully')
+                    alert ('Deleted item successfully');
                 }
             })
         }

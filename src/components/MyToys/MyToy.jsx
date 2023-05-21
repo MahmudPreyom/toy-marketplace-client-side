@@ -12,7 +12,7 @@ const MyToy = ({ myToy, handleDelete }) => {
         <td>{sellerName}</td> 
         <td>{toyName}</td> 
         <td>{subCategory}</td> 
-        <td>{price}</td> 
+        <td>$ {price}</td> 
         <td ><Link className="underline" to={`/updatetoys/${_id}`}><RxUpdate style={{fontSize: '1.5rem'}}></RxUpdate></Link></td> 
         <td onClick={() =>handleDelete(_id)} className="underline" ><Link><FcDeleteDatabase style={{fontSize: '1.5rem'}}></FcDeleteDatabase></Link></td> 
       
