@@ -43,7 +43,7 @@ const AddToysForm = () => {
                     <input
                         type="text"
                         name="photo"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -53,7 +53,7 @@ const AddToysForm = () => {
                     <input
                         type="text"
                         name="name"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -63,7 +63,7 @@ const AddToysForm = () => {
                     <input
                         type="text"
                         name="sellerName"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -73,7 +73,7 @@ const AddToysForm = () => {
                     <input
                         type="email"
                         name="sellerEmail"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -97,7 +97,7 @@ const AddToysForm = () => {
                     <input
                         type="number"
                         name="price"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -107,7 +107,7 @@ const AddToysForm = () => {
                     <input
                         type="number"
                         name="rating"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -117,7 +117,7 @@ const AddToysForm = () => {
                     <input
                         type="number"
                         name="quantity"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="mb-4">
@@ -127,7 +127,7 @@ const AddToysForm = () => {
                     <input
                         type="text"
                         name="detailDescription"
-                        className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                        className="border border-gray-300 rounded-md px-4 py-2 w-full" required
                     />
                 </div>
                 <div className="text-center">

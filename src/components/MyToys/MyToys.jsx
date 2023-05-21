@@ -13,7 +13,7 @@ const MyToys = () => {
         fetch(url)
         .then(res => res.json())
         .then(data =>{
-            setMyToys(data)
+            setMyToys(data);
         })
     },[])
 
